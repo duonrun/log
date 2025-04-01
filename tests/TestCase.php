@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FiveOrbs\Log\Tests;
+namespace Duon\Log\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

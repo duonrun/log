@@ -1,7 +1,7 @@
 ---
 title: Introduction
 ---
-FiveOrbs Log
+Duon Log
 =========
 
 !!! warning "Note"

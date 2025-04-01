@@ -1,11 +1,11 @@
-FiveOrbs Log
-=========
+Duon Log
+========
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/fiveorbs/log.svg)](https://scrutinizer-ci.com/g/fiveorbs/log/code-structure)
-[![Psalm coverage](https://shepherd.dev/github/fiveorbs/log/coverage.svg?)](https://shepherd.dev/github/fiveorbs/log)
-[![Psalm level](https://shepherd.dev/github/fiveorbs/log/level.svg?)](https://fiveorbs.dev/log)
-[![Quality Score](https://img.shields.io/scrutinizer/g/fiveorbs/log.svg)](https://scrutinizer-ci.com/g/fiveorbs/log)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/duoncode/log.svg)](https://scrutinizer-ci.com/g/duoncode/log/code-structure)
+[![Psalm coverage](https://shepherd.dev/github/duoncode/log/coverage.svg?)](https://shepherd.dev/github/duoncode/log)
+[![Psalm level](https://shepherd.dev/github/duoncode/log/level.svg?)](https://duoncode.dev/log)
+[![Quality Score](https://img.shields.io/scrutinizer/g/duoncode/log.svg)](https://scrutinizer-ci.com/g/duoncode/log)
 
 A simple PSR-3 logger using PHP's `error_log` function.
 

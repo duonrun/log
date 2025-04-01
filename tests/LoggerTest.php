@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace FiveOrbs\Log\Tests;
+namespace Duon\Log\Tests;
 
-use FiveOrbs\Log\Formatter\TemplateFormatter;
-use FiveOrbs\Log\Logger;
+use Duon\Log\Formatter\TemplateFormatter;
+use Duon\Log\Logger;
 use PHPUnit\Framework\Attributes\TestDox;
 use Psr\Log\InvalidArgumentException;
 

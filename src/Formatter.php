@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FiveOrbs\Log;
+namespace Duon\Log;
 
 interface Formatter
 {

@@ -1,16 +1,16 @@
 {
-	"name": "fiveorbs/log",
+	"name": "duon/log",
 	"description": "A simple PSR-3 Logger",
 	"type": "library",
 	"license": "MIT",
 	"autoload": {
 		"psr-4": {
-			"FiveOrbs\\Log\\": "src/"
+			"Duon\\Log\\": "src/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"FiveOrbs\\Log\\Tests\\": "tests/"
+			"Duon\\Log\\Tests\\": "tests/"
 		}
 	},
 	"authors": [
@@ -23,10 +23,10 @@
 		"psr/log": "^3.0"
 	},
 	"require-dev": {
-		"fiveorbs/dev": "^1.0",
+		"duon/dev": "^1.1",
 		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
-		"phpunit/phpunit": "^10.4",
-		"vimeo/psalm": "^5.15"
+		"phpunit/phpunit": "^12.0",
+		"vimeo/psalm": "^6.10"
 	},
 	"config": {
 		"allow-plugins": {

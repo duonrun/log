@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FiveOrbs\Log\Formatter;
+namespace Duon\Log\Formatter;
 
 use DateTimeInterface;
 use Stringable;

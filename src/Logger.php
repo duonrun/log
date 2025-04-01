@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace FiveOrbs\Log;
+namespace Duon\Log;
 
-use FiveOrbs\Log\Formatter\MessageFormatter;
+use Duon\Log\Formatter\MessageFormatter;
 use Psr\Log\InvalidArgumentException;
 use Psr\Log\LoggerInterface as PsrLogger;
 use Stringable;

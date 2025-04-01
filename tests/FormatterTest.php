@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace FiveOrbs\Log\Tests;
+namespace Duon\Log\Tests;
 
 use DateTime;
+use Duon\Log\Formatter\ContextFormatter;
+use Duon\Log\Formatter\MessageFormatter;
+use Duon\Log\Formatter\TemplateFormatter;
 use ErrorException;
-use FiveOrbs\Log\Formatter\ContextFormatter;
-use FiveOrbs\Log\Formatter\MessageFormatter;
-use FiveOrbs\Log\Formatter\TemplateFormatter;
 use PHPUnit\Framework\Attributes\TestDox;
 use PHPUnit\Framework\TestCase;
 use stdClass;

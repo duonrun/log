@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace FiveOrbs\Log\Formatter;
+namespace Duon\Log\Formatter;
 
-use FiveOrbs\Log\Formatter;
+use Duon\Log\Formatter;
 
 class MessageFormatter implements Formatter
 {

@@ -1,10 +1,10 @@
-site_name: FiveOrbs Log
+site_name: Duon Log
 copyright: © 2023 ebene fünf GmbH
 nav:
   - index.md
 theme:
-    name: fiveorbs
-repo_url: https://github.com/fiveorbs/log
+    name: duon
+repo_url: https://github.com/duon/log
 extra:
   project: Log
 plugins:
