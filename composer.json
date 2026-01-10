@@ -23,7 +23,7 @@
 		"psr/log": "^3.0"
 	},
 	"require-dev": {
-		"duon/dev": "^1.1",
+		"duon/dev": "dev-main",
 		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
 		"phpunit/phpunit": "^12.0",
 		"vimeo/psalm": "^6.10"
