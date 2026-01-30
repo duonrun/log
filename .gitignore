@@ -3,9 +3,12 @@
 .env
 .php*.cache
 .phpactor.json
+composer.lock
 /coverage
 /data
+php-cs-fixer.php
+phpunit.xml
+psalm.xml
 /tmp
 /vendor
 __pycache__
-composer.lock
