@@ -3,13 +3,14 @@
 	"description": "A simple PSR-3 Logger",
 	"type": "library",
 	"license": "MIT",
-	"homepage": "https://duon.run/log",
 	"authors": [
 		{
 			"name": "Ernst",
 			"email": "ernst@duon.run"
 		}
 	],
+	"homepage": "https://duon.run/log",
+	"keywords": ["duon", "log", "logging", "psr-3"],
 	"autoload": {
 		"psr-4": {
 			"Duon\\Log\\": "src/"
@@ -26,5 +27,22 @@
 	},
 	"require-dev": {
 		"duon/dev": "^2.5"
+	},
+	"scripts": {
+		"test": [
+			"./vendor/bin/phpunit --testdox --no-coverage --colors=always"
+		],
+		"types": "./vendor/bin/psalm --no-cache",
+		"mdlint": "markdownlint-cli2 README.md CHANGELOG.md LICENSE.md docs/",
+		"coverage": [
+			"php -d xdebug.mode=coverage ./vendor/bin/phpunit --testdox --path-coverage --coverage-text --coverage-php=coverage/cover.php --colors=always",
+			"./vendor/bin/coverlyzer coverage/cover.php"
+		],
+		"ci": [
+			"composer coverage",
+			"composer types",
+			"composer mdlint"
+		],
+		"benchmark": "php bench/run.php"
 	}
 }
