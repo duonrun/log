@@ -31,10 +31,10 @@ class FormatterTest extends TestCase
 	#[TestDox('Format message with ContextFormatter')]
 	public function testTemplateFormatter(): void
 	{
-		$template = 'String: {string}, Integer: {integer}, ' .
-			'DateTime: {datetime}, Array: {array}' .
-			'Float: {float}, Object: {object} ' .
-			'Other: {other}, Null: {null}, {exception}';
+		$template = 'String: {string}, Integer: {integer}, '
+			. 'DateTime: {datetime}, Array: {array}'
+			. 'Float: {float}, Object: {object} '
+			. 'Other: {other}, Null: {null}, {exception}';
 		$context = [
 			'string' => 'Scream Bloody Gore',
 			'integer' => 13,

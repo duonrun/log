@@ -1,5 +1,4 @@
-Duon Log
-========
+# Duon Log
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/duonrun/log.svg)](https://scrutinizer-ci.com/g/duonrun/log/code-structure)
@@ -14,4 +13,6 @@ A simple PSR-3 logger using PHP's `error_log` function.
 During testing, PHP's `error_log` ini setting is set to a temporary file. To print the output to
 the console, prepend a special env variable to the PHPUnit cli command, as follows:
 
-    ECHO_LOG=1 phpunit
+```bash
+ECHO_LOG=1 phpunit
+```
