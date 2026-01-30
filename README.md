@@ -16,3 +16,7 @@ the console, prepend a special env variable to the PHPUnit cli command, as follo
 ```bash
 ECHO_LOG=1 phpunit
 ```
+
+## License
+
+This project is licensed under the [MIT license](LICENSE.md).
