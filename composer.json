@@ -7,8 +7,7 @@
 	"authors": [
 		{
 			"name": "Ernst",
-			"email": "ernst@duon.run",
-			"role": "Developer"
+			"email": "ernst@duon.run"
 		}
 	],
 	"autoload": {
