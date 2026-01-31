@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Duon\Log\Formatter;
 
 use Duon\Log\Formatter;
+use Override;
 
 /** @psalm-api */
 class ContextFormatter implements Formatter
@@ -13,6 +14,7 @@ class ContextFormatter implements Formatter
 
 	public function __construct(protected readonly bool $includeTraceback = true) {}
 
+	#[Override]
 	public function format(string $message, ?array $context): string
 	{
 		if ($context) {
