@@ -15,10 +15,15 @@ class TestCase extends BaseTestCase
 
 	public function setUp(): void
 	{
-		// capture output of error_log calls in a temporary file
-		// to prevent it printed to the console.
+		// Capture output of error_log calls in a temporary file
+		// to prevent it being printed to the console.
 		$this->defaultLog = ini_get('error_log');
 		$this->tempFile = tmpfile();
+
+		if ($this->tempFile === false) {
+			$this->markTestSkipped('Unable to create temp file for logging tests');
+		}
+
 		$this->logFile = stream_get_meta_data($this->tempFile)['uri'];
 		ini_set('error_log', $this->logFile);
 
