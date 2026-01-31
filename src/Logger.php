@@ -12,14 +12,14 @@ use Stringable;
 /** @psalm-api */
 class Logger implements PsrLogger
 {
-	public const DEBUG = 100;
-	public const INFO = 200;
-	public const NOTICE = 300;
-	public const WARNING = 400;
-	public const ERROR = 500;
-	public const CRITICAL = 600;
-	public const ALERT = 700;
-	public const EMERGENCY = 800;
+	public const int DEBUG = 100;
+	public const int INFO = 200;
+	public const int NOTICE = 300;
+	public const int WARNING = 400;
+	public const int ERROR = 500;
+	public const int CRITICAL = 600;
+	public const int ALERT = 700;
+	public const int EMERGENCY = 800;
 
 	/** @psalm-var array<int, non-empty-string> */
 	protected array $levelLabels;
