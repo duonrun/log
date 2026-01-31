@@ -28,15 +28,13 @@ class TestCase extends BaseTestCase
 
 	public function tearDown(): void
 	{
-		// Restore default error_log and handlers
+		// Restore default error_log and error reporting
 		if (is_file($this->logFile)) {
 			$logFileContent = file_get_contents($this->logFile);
 			unlink($this->logFile);
 		}
 
 		ini_set('error_log', $this->defaultLog);
-		restore_error_handler();
-		restore_exception_handler();
 		error_reporting($this->defaultErrorReporting);
 
 		$this->defaultErrorReporting = null;
