@@ -22,10 +22,20 @@ trait PreparesValue
 			(is_scalar($value) || (is_object($value) && ($value instanceof Stringable))) => (string) $value,
 			$value instanceof DateTimeInterface => $value->format('Y-m-d H:i:s T'),
 			is_object($value) => '[Instance of ' . $value::class . ']',
-			is_array($value) => '[Array ' . json_encode($value, JSON_UNESCAPED_SLASHES) . ']',
+			is_array($value) => $this->prepareArray($value),
 			is_null($value) => '[null]',
 			default => '[' . get_debug_type($value) . ']',
 		};
+	}
+
+	/**
+	 * @param array<array-key, mixed> $value
+	 */
+	private function prepareArray(array $value): string
+	{
+		$encoded = json_encode($value, JSON_UNESCAPED_SLASHES);
+
+		return '[Array ' . ($encoded !== false ? $encoded : '...') . ']';
 	}
 
 	protected function getExceptionMessage(
