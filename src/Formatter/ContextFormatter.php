@@ -17,7 +17,7 @@ class ContextFormatter implements Formatter
 	#[Override]
 	public function format(string $message, ?array $context): string
 	{
-		if ($context) {
+		if ($context !== null && $context !== []) {
 			return $message . ":\n" . $this->transform($context);
 		}
 

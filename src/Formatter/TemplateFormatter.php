@@ -17,7 +17,7 @@ class TemplateFormatter implements Formatter
 	#[Override]
 	public function format(string $message, ?array $context): string
 	{
-		if ($context) {
+		if ($context !== null && $context !== []) {
 			return $this->interpolate($message, $context);
 		}
 
