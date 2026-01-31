@@ -17,6 +17,17 @@ the console, prepend a special env variable to the PHPUnit cli command, as follo
 ECHO_LOG=1 phpunit
 ```
 
+### Test Environment Requirements
+
+Tests require:
+
+- `ini_set()` function enabled (for `error_log` redirection)
+- Writable system temp directory (for test log file isolation)
+- PHP `error_reporting` must be modifiable
+
+These are standard in development environments but may fail in restricted
+PHP configurations where `ini_set` is disabled via `disable_functions`.
+
 ## License
 
 This project is licensed under the [MIT license](LICENSE.md).
