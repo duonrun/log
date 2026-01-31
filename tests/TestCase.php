@@ -28,12 +28,18 @@ class TestCase extends BaseTestCase
 
 	public function tearDown(): void
 	{
-		// Restore default error_log and error reporting
-		if (is_file($this->logFile)) {
+		// Read log content before cleanup
+		$logFileContent = '';
+		if ($this->logFile && is_file($this->logFile)) {
 			$logFileContent = file_get_contents($this->logFile);
-			unlink($this->logFile);
 		}
 
+		// Close tmpfile resource (auto-deletes the temp file)
+		if ($this->tempFile && is_resource($this->tempFile)) {
+			fclose($this->tempFile);
+		}
+
+		// Restore default error_log and error reporting
 		ini_set('error_log', $this->defaultLog);
 		error_reporting($this->defaultErrorReporting);
 
@@ -42,7 +48,7 @@ class TestCase extends BaseTestCase
 		$this->tempFile = null;
 		$this->logFile = null;
 
-		if (getenv('ECHO_LOG') && $logFileContent) {
+		if (getenv('ECHO_LOG') && $logFileContent !== '') {
 			error_log($logFileContent);
 		}
 	}
